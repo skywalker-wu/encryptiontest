@@ -26,7 +26,7 @@ namespace SymmetryKey
 
                 if (plainText.Equals(decryptText))
                 {
-                    Console.WriteLine("Lalalala");
+                    Console.WriteLine("Lalalala Pass!");
                 }
 
                 Console.ReadKey();
@@ -44,7 +44,7 @@ namespace SymmetryKey
             TimeSpan ts = stopWatch.Elapsed;
 
             // Format and display the TimeSpan value.
-            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:000}",
                 ts.Hours, ts.Minutes, ts.Seconds,
                 ts.Milliseconds);
             Console.WriteLine(elapsedTime);
